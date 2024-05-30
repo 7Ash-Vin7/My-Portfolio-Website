@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwins's Portfolio Website</a></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1><span>Ashwin Elijah</span></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <img src="Images/close.png" onclick="closemenu()" alt="" width="20" height="20" class="icon">
+            </ul>
+            <img src="Images/menu.png" onclick="openmenu()" alt="" width="20" height="20" class="icon">
+        </nav>
+        <div class="header-text">
+            <h1><i><span style="color: lightgoldenrodyellow;">Hi!, I'm</span> <span style="color:purple" >Ashwin Elijah</span></i></h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------about me section------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About pic1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><span style="color: rgb(69, 5, 69);">I'm Ashwin Elijah, blending my Pre-Engineering
+                   studies with an IoT short course for a comprehensive
+                   tech education. Seeking opportunities to excel
+                   and innovate in this dynamic field!.</span></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('profile')">Personal Information</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="profile">
+                    <ul>
+                        <li><span><strong>Name</strong></span><br><i>Ashwin Elijah</i></li>
+                        <li><span><strong>Date of Birth</strong></span><br><i>31<sup>st</sup>-12-2006</i></li>
+                        <li><span><strong>Education</strong></span><br><i>Matriculation</i></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span><strong>MS Excel</strong></span><br><i>Data Entry</i></li>
+                        <li><span><strong>Sports</strong></span><br><i>Football, Basketball and Tennis.</i></li>
+                        <li><span><strong>IoT Projects</strong></span><br><i>From smart home automation to industrial IoT solutions.</i></li>
+                        <li><span><strong>Drawing</strong></span><br><i>A hobby and interest.</i></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><strong>Aptech Shara-e-Faisal Center</strong></span><br><i>IoT (Internet of Things)</i></li>
+                        <li><span><strong>Aisha Bawani Government College</strong></span><br><i>Intermediate (In Pre-Engineering)</i></li>
+                        <li><span><strong>St. Paul's High School</strong></span><br><i>Matriculation (In Computer science)</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------services-------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <img src="images/MS Excel.png" alt="MS Excel" width="160px" height="160px">
+                <h2>MS Excel</h2>
+                <p><i>Data managing</i></p>
+            </div>
+
+            <div>
+                <img src="images/IoT.png" alt="IoT" width="150px" height="150px">
+                <h2>IoT Projects</h2>
+                <p><i>Being enthusiastic and active, making adroit
+                    projects as an interest and work.</i></p>
+            </div>
+
+            <!-- <div>
+                <img src="#" alt="Drawing">
+                <h2>Drawing</h2>
+                <p><i>Sceneries and whatever drives the attention.</i></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<!-- -----------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/work 1 home automation.png" alt="home automation">
+                <div class="layer">
+                    <h3><strong>Smart Home</strong></h3>
+                    <p><i>Making moast of the home appliance automatic which makes the work much<br>easier.</i></p>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work 2  water quality test.jpeg" alt="water quality" width="300px" height="180px">
+                <div class="layer">
+                    <h3><strong>Water Quality testing</strong></h3>
+                    <p><i>For checking how clear and clean content in a solution, like water.
+                        Turbidity sensors are used for measuring inpurities in water,
+                        and analyze water quality in a wide range of industries.</i></p>
+                     <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work 4 Third eye for blind.png" width="300px" height="180px">
+                <div class="layer">
+                    <h3><strong>Third Eye For Blind</strong></h3>
+                    <p><i>With the help of an ultrasonic sensor
+                          that detects obstacles at a given
+                          distance, blind people can walk carefully.</i></p>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+</div>
+
+<!-- ----------------------------contact---------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i>avsihn7@gmail.com</i> <img src="Images/mail.png" alt="Email" width="30" height="30" style="vertical-align:middle"></p>
+                <p><i>0346-1120060</i> <img src="Images/telephone.png" alt="Phone" width="30" height="30" style="vertical-align:middle"></p>
+                <div class="social-images">
+                    <a href="https://github.com/7Ash-Vin7"><img src="images/github.png" alt="Github" width="30" height="30"></a>
+                    <a href="https://www.fiverr.com/ashwin_elijah"><img src="images/fiverr.jpg" alt="Fiverr" width="30" height="30" style="border-radius: 20px;"></a>
+                    <a href="https://www.upwork.com/freelancers/~011fbe9c837c88fa37"><img src="images/upwork.png" alt="Upwork" width="30" height="30" style="border-radius: 20px;"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="Linkedin" width="30" height="30" style="border-radius: 20px;"></a>
+                </div>
+                <a href="file:///C:/Users/g3niuS/Downloads/Resume%20(1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made with 😊 by <B><I>Ashwin Elijah</I></B></p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwSdKQNkuaxcEeu3vXF6gwFhfVmXCSUGavGcgyrayXhT6AToGiqbND71BY7eJI_32Z1w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
